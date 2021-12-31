@@ -1,35 +1,48 @@
-<nav class="navbar navbar-light p-1" style="background-color: #e3f2fd">
-  <div class="container d-flex align-items-center justify-content-between">
-    <a class="navbar-brand d-flex align-items-center" routerLink="">
-      <img
-        src="assets/images/shop.png"
-        class="d-block"
-        alt="..."
-        style="height: 50px"
-      />
-      <h1
-        style="
-          font-size: 20px;
-          font-weight: 800;
-          padding-left: 15px;
-          text-transform: none;
-          color: blue;
-        "
+<nav class="navbar navbar-expand-lg navbar-light bg-light p-2 mb-4">
+  <div class="container-fluid">
+    <div
+      class="
+        collapse
+        navbar-collapse
+        d-flex
+        justify-content-between
+        align-items-center
+      "
+      id="navbarSupportedContent"
+    >
+      <a
+        class="navbar-brand mt-2 mt-lg-0 d-flex align-items-center"
+        routerLink=""
       >
-        My store
-      </h1>
-    </a>
-    <div class="" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto d-flex flex-row align-items-center fw-bold">
+        <img
+          src="assets/images/shop.png"
+          class="d-block"
+          alt="..."
+          style="height: 50px"
+        />
+        <h1
+          class="fs-4 fw-bolder text-Secondary"
+          style="margin-left: 15px; text-transform: none"
+        >
+          Champion store
+        </h1>
+      </a>
+      <ul
+        class="navbar-nav d-flex flex-row navbar-nav align-items-center fw-bold"
+      >
         <li class="nav-item active px-4">
           <a class="nav-link" routerLink="">Home</a>
         </li>
-        <li class="nav-item active px-4" *ngIf="!isUser">
-          <a class="nav-link" routerLink="login">Login</a>
+        <!-- <li class="nav-item active px-4" *ngIf="!isUser">
+          <a class="nav-link btn btn-success text-white" routerLink="login"
+            >Login</a
+          >
         </li>
         <li class="nav-item active px-4" *ngIf="!isUser">
-          <a class="nav-link" routerLink="register">Register</a>
-        </li>
+          <a class="nav-link btn btn-primary text-white" routerLink="register"
+            >Register</a
+          >
+        </li> -->
         <li class="nav-item active px-4" *ngIf="isUser">
           <a class="nav-link" routerLink="profil">Profil</a>
         </li>
@@ -40,9 +53,9 @@
           <a class="nav-link" routerLink="myproducts">My Products</a>
         </li>
       </ul>
+      <a class="btn btn-danger fw-bold" *ngIf="isUser" (click)="logout()"
+        >Logout</a
+      >
     </div>
-    <a class="btn btn-danger fw-bold" *ngIf="isUser" (click)="logout()"
-      >Logout</a
-    >
   </div>
 </nav>

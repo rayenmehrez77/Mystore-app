@@ -13,6 +13,10 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  register() {
+    this.route.navigate(['/register']);
+  }
+
   login(f) {
     let data = f.value;
     this.sa

@@ -7,19 +7,26 @@
         <div class="uk-width-auto">
           <img
             class="uk-comment-avatar"
-            [src]="dataProfile.image"
-            width="200"
-            height="200"
-            style="border-radius: 100%"
+            [src]="
+              'https://scontent.ftun2-1.fna.fbcdn.net/v/t39.30808-6/258507150_1896826700521639_1902889433822845337_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=GnFOPNUDQCQAX_RNUfb&_nc_ht=scontent.ftun2-1.fna&oh=00_AT8ASjshOjstZxu5QLSv1yeCwTqUfrfRbEEzYn7KsyoUWQ&oe=61D497F3'
+            "
+            style="
+              border-radius: 100%;
+              height: 150px;
+              width: 150px;
+              object-fit: cover;
+            "
             alt="Profile picture"
           />
         </div>
         <div class="uk-width-expand">
           <h4 class="uk-comment-title uk-margin-remove">
-            <a class="uk-link-reset" href="/profil">{{ dataProfile.flName }}</a>
+            <a class="uk-link-reset pb-2" href="/profil">{{
+              dataProfile.flName
+            }}</a>
           </h4>
           <button
-            class="btn btn-info"
+            class="btn btn-info mr-4"
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
           >

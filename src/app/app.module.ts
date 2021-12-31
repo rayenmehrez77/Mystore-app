@@ -16,6 +16,8 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { FormsModule } from '@angular/forms';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { FooterComponent } from './footer/footer.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     ProductsComponent,
     MyproductsComponent,
     ProductDetailComponent,
+    FooterComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
